@@ -1,0 +1,27 @@
+{
+    "name": "Dost Bana lo Pls",
+    "description":"kyuki dosti jaruri hai",
+    "version": "0.0.1",
+    "manifest_version": 3,
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "permissions": [
+      "storage"
+    ],
+    "host_permissions": [
+      "https://codeforces.com/*"
+    ],
+    "content_scripts": [
+        {
+          "js": [
+            "js/getFriends.js",
+            "js/popup.js"
+          ],
+          "matches": [
+            "https://codeforces.com/",
+            "https://codeforces.com/*"
+          ]
+        }
+      ]
+}
